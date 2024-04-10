@@ -1,0 +1,22 @@
+*{
+    font-family: sans-serif;
+}
+
+.box{
+    background-color: #051E34;
+    height: 100vh;
+    width: 10rem;
+    background-image: url(../img/sidebar-bg.png);
+    color: white;
+    padding: 1rem 1rem;
+    
+}
+
+.my-blu{
+    background-color: #1B72E8;
+    color: white;
+}
+
+.btn-blu{
+    background-color: #165BBA;
+}
