@@ -48,13 +48,24 @@
             <!-- striscia blu -->
             <div class="container-fluid">
                 <div class="row my-blu ">
-                    <div class="col-6 d-flex flex-row  pt-3">
+                    <div class="col-6 d-flex flex-row flex-wrap pt-3">
                         <h2 class="d-flex align-items-center ">Boolean </h2>
-                        <h5 class="d-flex align-items-center mx-3">
+                        <h5 class="d-flex align-items-center mx-3 col-9">
                             <span class="badge d-inline-block btn-blu rounded-pill ">piano blaze</span>
                         </h5>
                         <h5 class="d-flex align-items-center mx-3">
                             <span class="badge d-inline-block btn-blu rounded-pill ">3 app</span>
+                        </h5>
+                        <div class="d-flex flex-column align-self-center pb-2"><i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <h5 class="d-flex align-items-center">
+                            <span class="badge d-inline-block btn-blu rounded-pill mx-1">Boolean mobile app</span>
+                        </h5>
+                        <h5 class="d-flex align-items-center ">
+                            <span class="badge d-inline-block btn-blu rounded-pill mx-1">Boolean mobile app</span>
+                        </h5>
+                        <h5 class="d-flex align-items-center ">
+                            <span class="badge d-inline-block btn-blu rounded-pill mx-1">Boolean mobile app</span>
                         </h5>
                     </div>
 
@@ -62,12 +73,86 @@
                         <p class="pt-3">Studenti online negli ultimi 30 minuti</p>
                         <p class="fs-2">125</p>
                     </div>
+                    <!-- button ofcanvas -->
                     <div class="col-3 pt-3">
-                        <span class="">Nuovo Studente</span>
-                        <a class="btn btn-outline-light ms" data-bs-toggle="offcanvas" href="#offcanvasExample"
-                            role="button" aria-controls="offcanvasExample">
-                            <i class="fa-solid fa-plus"></i>
-                        </a>
+                        <span class="">Nuovo Studente
+                        <button class="btn btn-outline-light ms" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                                <!-- offcanvas -->
+                        <div class="offcanvas offcanvas-end offcanvas-size-xl" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="row">
+                                    <!-- nome cognome -->
+                                    <div class="col">
+                                        nome
+                                      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                        cognome
+                                      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                    </div>
+                                </div>
+                                        <!-- email password -->
+                                        <div class="row">
+                                        <div class="col">
+                                            e mail
+                                            <div class="input-group flex-nowrap">
+                                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                                              </div>
+                                            
+                                        </div>
+                                        <div class="col">
+                                            password
+                                          <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                                        </div>
+                                    </div>
+                                    <!-- indirizzo -->
+                                    <div class="col">
+                                        inidirzzo
+                                      <input type="text" class="form-control" placeholder="indirizzo" aria-label="First name">
+                                    </div>
+                                    <!-- citta cap -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="input-group my-3">
+                                                
+                                                <input type="file" class="form-control" id="inputGroupFile01">
+                                              </div> 
+                                        </div>
+                                    </div>
+                                    <!-- check -->
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                  Default checkbox
+                                                </label>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <!-- button -->
+                                    <div class="row">
+                                        <div class="col my-3">
+                                            <button type="button" class="btn btn-primary">salva</button>
+                                            <button type="button" class="btn btn-warning">svuota</button>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+
+                                  
+                            </div>
+                        </div>
+                    </span>
                     </div>
                 </div>
                 <!-- card e container main -->
@@ -233,48 +318,57 @@
 
 
                             <ul class="list-group  list-group-flush">
-                                <li class="list-group-item">Come aggiungere un nuovo studente 
+                                <li class="list-group-item">Come aggiungere un nuovo studente
                                     <p class="d-inline-flex gap-1">
-                                        <a class="btn " data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                        <a class="btn " data-bs-toggle="collapse" href="#multiCollapseExample1"
+                                            role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
                                             <i class="fa-solid fa-angle-down"></i>
                                         </a>
                                     </p>
                                     <div class="collapse multi-collapse" id="multiCollapseExample1">
                                         <div class="card card-body">
-                                          Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            Some placeholder content for the first collapse component of this
+                                            multi-collapse example. This panel is hidden by default but revealed when
+                                            the user activates the relevant trigger.
                                         </div>
-                                      </div>
+                                    </div>
                                 </li>
                                 <li class="list-group-item">Come posso accedere alle informazioni del mio account?
                                     <p class="d-inline-flex gap-1">
-                                        <a class="btn " data-bs-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                        <a class="btn " data-bs-toggle="collapse" href="#multiCollapseExample2"
+                                            role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
                                             <i class="fa-solid fa-angle-down"></i>
                                         </a>
                                     </p>
                                     <div class="collapse multi-collapse" id="multiCollapseExample2">
                                         <div class="card card-body">
-                                          Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            Some placeholder content for the first collapse component of this
+                                            multi-collapse example. This panel is hidden by default but revealed when
+                                            the user activates the relevant trigger.
                                         </div>
-                                      </div>
+                                    </div>
                                 </li>
                                 <li class="list-group-item">Posso usare questa Dashboard da mobile?
                                     <p class="d-inline-flex gap-1">
-                                        <a class="btn " data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                                        <a class="btn " data-bs-toggle="collapse" href="#multiCollapseExample3"
+                                            role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
                                             <i class="fa-solid fa-angle-down"></i>
                                         </a>
                                     </p>
                                     <div class="collapse multi-collapse" id="multiCollapseExample3">
                                         <div class="card card-body">
-                                          Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            Some placeholder content for the first collapse component of this
+                                            multi-collapse example. This panel is hidden by default but revealed when
+                                            the user activates the relevant trigger.
                                         </div>
-                                      </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <!-- fine colonna sinistra -->
                     <!-- inizio colonna destra -->
-                    <div class="col-5 py-3">
+                    <div class="col-5 col-12m py-3">
                         <div class="card" style="width: 100%;">
                             <div class="card-header">
                                 <h4>Todo</h4>
