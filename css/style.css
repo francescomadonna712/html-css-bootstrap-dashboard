@@ -4,7 +4,7 @@
 
 .box{
     background-color: #051E34;
-    height: 100vh;
+    height: 75rem;
     width: 10rem;
     background-image: url(../img/sidebar-bg.png);
     color: white;
@@ -20,3 +20,17 @@
 .btn-blu{
     background-color: #165BBA;
 }
+
+.my-list{
+    
+    border: none;
+    
+}
+.my-p45{
+    padding-right: 45%;
+}
+
+.my-p55{
+    padding-right:53% ;
+}
+
