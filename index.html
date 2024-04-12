@@ -28,8 +28,21 @@
                         <input class="form-control me-2" type="search"
                             placeholder="&#x1F50D Prova a cercare: lezioni di laravel" aria-label="Search">
                     </div>
-                    <div class="ps-3">
+                    <div class="ps-3 flex-column align-content-center">
                         <i class="fa-solid fa-list-ul"></i>
+                    </div>
+                    <div class="ps-3 flex-column align-content-center">
+                        <div class="dropstart">
+                            <button class="btn " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Profilo</a></li>
+                              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                              <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                          </div>
+                        
                     </div>
                 </form>
             </div>
@@ -79,7 +92,7 @@
                         <button class="btn btn-outline-light ms" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
                                 <!-- offcanvas -->
-                        <div class="offcanvas offcanvas-end offcanvas-size-xl" tabindex="-1" id="offcanvasRight"
+                        <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight"
                             aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
@@ -120,20 +133,41 @@
                                     </div>
                                     <!-- citta cap -->
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-6">
+                                            Città
+                                            <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                        </div>
+                                            <div class="col">
+                                                stato
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>scegli</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                  </select>
+                                            </div>
+                                            <div class="col-2">
+                                                Cap
+                                                <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                            </div>
+                                        
+                                    </div>
+                                    <!-- carica file -->
+                                    <div class="row">
+                                        <div class="col ">
                                             <div class="input-group my-3">
-                                                
                                                 <input type="file" class="form-control" id="inputGroupFile01">
-                                              </div> 
+                                            </div>
                                         </div>
                                     </div>
+                                                
                                     <!-- check -->
                                     <div class="row">
                                         <div class="col">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                                 <label class="form-check-label" for="flexCheckDefault">
-                                                  Default checkbox
+                                                  Seleziona per proseguire
                                                 </label>
                                               </div>
                                         </div>
